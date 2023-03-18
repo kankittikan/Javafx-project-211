@@ -1,0 +1,30 @@
+.label {
+    -fx-font-size: 16;
+}
+
+.button{
+    -fx-font-size: 16;
+}
+
+.title {
+    -fx-font-size: 20;
+}
+
+.list-cell {
+    -fx-font-size: 16;
+}
+.radio-button {
+    -fx-font-size: 16;
+}
+
+.check-box {
+    -fx-font-size: 16;
+}
+
+.text-area {
+    -fx-font-size: 16;
+}
+
+.text-input {
+    -fx-font-size: 16;
+}

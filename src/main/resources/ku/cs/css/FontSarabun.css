@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Sarabun';
+    src: url('Sarabun-SemiBold.ttf');
+}
+
+.tab {
+    -fx-font-family: "Sarabun";
+}
+
+.list-cell {
+    -fx-font-family: "Sarabun";
+}
+
+.radio-button {
+    -fx-font-family: "Sarabun";
+}
+
+.check-box {
+    -fx-font-family: "Sarabun";
+}
+.table-cell {
+    -fx-font-family: "Sarabun";
+}
+
+.text-input {
+    -fx-font-family: "Sarabun";
+}
+
+.text-area {
+    -fx-font-family: "Sarabun";
+}
+
+.label {
+    -fx-font-family: "Sarabun";
+}
+
+.button{
+    -fx-font-family: "Sarabun";
+}

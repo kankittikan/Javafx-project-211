@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainAnchorPane" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.report.controllers.StudentProfileController">
+   <children>
+      <AnchorPane fx:id="anchorPane1" layoutX="75.0" layoutY="218.0" prefHeight="250.0" prefWidth="560.0" style="-fx-background-radius: 15;">
+         <effect>
+            <DropShadow height="121.53" radius="61.4525" spread="0.22" width="126.28">
+               <color>
+                  <Color red="0.8313725590705872" green="0.8549019694328308" blue="0.8627451062202454" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fx:id="imageStudent" fitHeight="190.0" fitWidth="190.0" layoutX="55.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="username" layoutX="289.0" layoutY="53.0" text="Username:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="head" layoutX="289.0" layoutY="152.0" text="Name:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="384.0" layoutY="152.0" text="nameLabel">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameLabel" layoutX="384.0" layoutY="53.0" text="usernameLabel">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPane2" layoutX="660.0" layoutY="218.0" prefHeight="250.0" prefWidth="250.0" style="-fx-background-radius: 15;">
+         <effect>
+            <DropShadow height="121.53" radius="61.4525" spread="0.22" width="126.28">
+               <color>
+                  <Color red="0.8313725590705872" green="0.8549019694328308" blue="0.8627451062202454" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Button fx:id="changePasswordButton" layoutX="25.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleChangePasswordButton" prefHeight="50.0" prefWidth="200.0" text="เปลี่ยนรหัสผ่าน">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="changePictureButton" layoutX="25.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleChangeProfilePictureButton" prefHeight="50.0" prefWidth="200.0" text="เปลี่ยนรูปโปรไฟล์">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPane3" layoutX="76.0" layoutY="492.0" prefHeight="75.0" prefWidth="835.0" style="-fx-background-radius: 15;">
+         <effect>
+            <DropShadow height="121.53" radius="61.4525" spread="0.22" width="126.28">
+               <color>
+                  <Color red="0.8313725590705872" green="0.8549019694328308" blue="0.8627451062202454" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Button fx:id="logoutButton" layoutX="648.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleLogOutButton" prefHeight="40.0" prefWidth="150.0" text="ออกจากระบบ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="467.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleBackToHomeButton" prefHeight="40.0" prefWidth="150.0" text="ย้อนกลัย">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="navAnchorPane" prefHeight="72.0" prefWidth="1024.0">
+         <children>
+            <Label fx:id="time" layoutX="77.0" layoutY="25.0" text="Time">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameHeadLabel" layoutX="836.0" layoutY="26.0" text="usernameLabel">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="miniImageStudent" fitHeight="54.0" fitWidth="49.0" layoutX="773.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+      <Label fx:id="profileLabel" layoutX="96.0" layoutY="147.0" text="โปรไฟล์">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

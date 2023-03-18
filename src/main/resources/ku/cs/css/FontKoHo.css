@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'KoHo';
+    src: url('KoHo-SemiBold.ttf');
+}
+
+.tab {
+    -fx-font-family: "KoHo";
+}
+
+.check-box {
+    -fx-font-family: "KoHo";
+}
+
+.radio-button {
+    -fx-font-family: "KoHo";
+}
+
+.table-cell {
+    -fx-font-family: "KoHo";
+}
+
+.list-cell {
+    -fx-font-family: "KoHo";
+}
+
+.text-input {
+    -fx-font-family: "KoHo";
+}
+
+.text-area {
+    -fx-font-family: "KoHo";
+}
+
+.label {
+    -fx-font-family: "KoHo";
+}
+
+.button{
+    -fx-font-family: "KoHo";
+}

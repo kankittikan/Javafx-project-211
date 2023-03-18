@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.report.controllers.RequestController">
+   <center>
+      <AnchorPane fx:id="backgroundRequestAnchorPane" prefHeight="660.0" prefWidth="1024.0">
+         <children>
+            <TextField fx:id="nameTextField" layoutX="261.0" layoutY="205.0" promptText="ชื่อ นามสกุล">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="usernameTextField" layoutX="261.0" layoutY="272.0" promptText="username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label fx:id="nameTopicLabel" layoutX="122.0" layoutY="211.0" prefHeight="23.0" prefWidth="113.0" text="ชื่อ-นามสกุล">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameTopicLabel" layoutX="134.0" layoutY="284.0" prefHeight="23.0" prefWidth="99.0" text="ชื่อผู้ใช้งาน">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordTopicLabel" layoutX="145.0" layoutY="358.0" prefHeight="23.0" prefWidth="91.0" text="รหัสผ่าน">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="acceptRequestButton" layoutX="534.0" layoutY="402.0" mnemonicParsing="false" onAction="#handleAcceptToRequestButton" prefHeight="31.0" prefWidth="135.0" text="ยืนยันคำร้องขอ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="400.0" layoutY="402.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="31.0" prefWidth="89.0" text="ย้อนกลับ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="noticeLabel" alignment="CENTER" layoutX="331.0" layoutY="100.0" prefHeight="25.0" prefWidth="362.0" text="noticeLabel">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordField" layoutX="261.0" layoutY="352.0" promptText="password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <TextArea fx:id="reasonTextArea" layoutX="534.0" layoutY="216.0" prefHeight="164.0" prefWidth="362.0" promptText="เหตุผล" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="reasonTopicLabel" layoutX="534.0" layoutY="178.0" text="เหตุผล">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane fx:id="topLayoutAnchorPane" prefHeight="60.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="topicLabel" layoutX="38.0" layoutY="13.0" text="คำร้องขอยกเลิกระงับสิทธิ์การใช้งาน">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="timeLabel" alignment="CENTER" layoutX="816.0" layoutY="15.0" prefHeight="31.0" prefWidth="168.0" text="timeLabel">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

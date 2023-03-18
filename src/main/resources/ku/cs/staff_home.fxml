@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.report.controllers.StaffHomeController">
+   <top>
+      <AnchorPane fx:id="topLayoutAnchorPane" prefHeight="80.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="topicLabel" layoutX="43.0" layoutY="23.0" text="หน้าหลักเจ้าหน้าที่">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imageStaff" fitHeight="50.0" fitWidth="50.0" layoutX="257.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="nameLabel" layoutX="317.0" layoutY="30.0" prefHeight="20.0" prefWidth="267.0" text="nameLabel">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Button fx:id="profileButton" layoutX="800.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleProfileButton" text="โปรไฟล์">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="logOutButton" layoutX="900.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleLogOutButton" text="ออกจากระบบ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="timeLabel" layoutX="855.0" layoutY="13.0" text="timeLabel">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="agencyLabel" alignment="CENTER" layoutX="535.0" layoutY="48.0" prefHeight="20.0" prefWidth="249.0" text="agencyLabel">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="agencyTopicLabel" layoutX="621.0" layoutY="24.0" text="หน่วยงาน">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane fx:id="backgroundStaffHomeAnchorPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="categoryListView" layoutX="44.0" layoutY="85.0" prefHeight="188.0" prefWidth="226.0" />
+            <Label fx:id="complaintListLabel" alignment="CENTER" layoutX="44.0" layoutY="53.0" prefHeight="30.0" prefWidth="226.0" text="รายการเรื่องร้องเรียน">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="headTopicLabel" layoutX="395.0" layoutY="68.0" text="หัวข้อ">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="statusTopicLabel" layoutX="392.0" layoutY="141.0" text="สถานะ">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="staffNameTopicLabel" layoutX="370.0" layoutY="213.0" text="ผู้รับผิดชอบ">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="subjectReportTextArea" editable="false" layoutX="44.0" layoutY="354.0" prefHeight="224.0" prefWidth="500.0" promptText="เนื้อหาเรื่องร้องเรียน" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="headLabel" alignment="CENTER" layoutX="286.0" layoutY="101.0" prefHeight="25.0" prefWidth="270.0" text="headLabel">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="statusLabel" alignment="CENTER" layoutX="287.0" layoutY="171.0" prefHeight="25.0" prefWidth="267.0" text="statusLabel">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="staffNameLabel" alignment="CENTER" layoutX="286.0" layoutY="245.0" prefHeight="25.0" prefWidth="270.0" text="staffNameLabel">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Separator layoutX="559.0" layoutY="83.0" orientation="VERTICAL" prefHeight="541.0" prefWidth="21.0" />
+            <TextArea fx:id="howToSolveTextArea" layoutX="611.0" layoutY="257.0" prefHeight="261.0" prefWidth="375.0" promptText="ใส่ข้อความวิธีการจัดการเรื่องร้องเรียน" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextArea>
+            <Button fx:id="acceptManageButton" layoutX="309.0" layoutY="282.0" mnemonicParsing="false" onAction="#handleAcceptToChooseReportButton" prefHeight="35.0" prefWidth="223.0" text="ยืนยันดำเนินการเรื่องร้องเรียนนี้">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="sentHowToSolveButton" layoutX="853.0" layoutY="532.0" mnemonicParsing="false" onAction="#handleSentFeedbackButton" prefHeight="35.0" prefWidth="133.0" text="ส่งวิธีการจัดการ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="howToSolveLabel" layoutX="611.0" layoutY="213.0" text="แจ้งวิธีการจัดการของเจ้าหน้าที่">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="noticeTopicLabel" layoutX="611.0" layoutY="83.0" text="แจ้งเตือนการใช้ระบบ">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="noticeLabel" alignment="CENTER" layoutX="611.0" layoutY="130.0" prefHeight="52.0" prefWidth="375.0" text="noticeLabel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="subjectLabel" layoutX="44.0" layoutY="317.0" text="เนื้อหาเรื่องร้องเรียน">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="showImageButton" layoutX="445.0" layoutY="589.0" mnemonicParsing="false" onAction="#handleGoToShowImageViewReportButton" prefHeight="35.0" prefWidth="99.0" text="ดูรูปภาพ">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <MenuButton fx:id="filterReportButton" alignment="CENTER" contentDisplay="CENTER" layoutX="44.0" layoutY="273.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="226.0" text="ทั้งหมด" textAlignment="CENTER">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleFilterAllReportButton" text="ทั้งหมด" />
+                <MenuItem mnemonicParsing="false" onAction="#handleFilterWaitReportButton" text="รอดำเนินการ" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleFilterManagingReportButton" text="กำลังดำเนินการ" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleFilterFinishReportButton" text="ดำเนินการเสร็จสิ้น" />
+              </items>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </MenuButton>
+            <CheckBox fx:id="finishStatusCheckbox" layoutX="611.0" layoutY="529.0" mnemonicParsing="false" text="ดำเนินการเสร็จสิ้น">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

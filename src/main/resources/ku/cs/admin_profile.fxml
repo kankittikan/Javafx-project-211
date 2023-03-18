@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AP" prefHeight="720.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.report.controllers.AdminProfileController">
+    <children>
+        <AnchorPane fx:id="APCenter" layoutX="492.0" layoutY="190.0" prefHeight="339.0" prefWidth="390.0">
+            <children>
+                <Button fx:id="changeProfile" layoutX="56.0" layoutY="210.0" mnemonicParsing="false" onAction="#handleChangeImageButton" prefHeight="31.0" prefWidth="226.0" text="เปลี่ยนรูปภาพ">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="changePassword" layoutX="56.0" layoutY="270.0" mnemonicParsing="false" onAction="#handleAdminChangePasswordButton" prefHeight="31.0" prefWidth="226.0" text="เปลี่ยนรหัส">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Label fx:id="name" layoutX="56.0" layoutY="70.0" text="ชื่อ-นามสกุล :">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="username" layoutX="56.0" layoutY="136.0" text="Username :">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="usernameLabel" layoutX="190.0" layoutY="140.0" text="UsernameLabel">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="nameLabel" layoutX="190.0" layoutY="72.0" text="nameLabel">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <ImageView fx:id="image" fitHeight="294.0" fitWidth="307.0" layoutX="151.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="downAP" layoutY="656.0" prefHeight="63.0" prefWidth="1024.0">
+         <children>
+              <Button fx:id="backToHome" mnemonicParsing="false" onAction="#handleBackAdminHomeButton" prefHeight="65.0" prefWidth="102.0" styleClass="Button3" text="ย้อนกลับ">
+                  <font>
+                      <Font size="15.0" />
+                  </font>
+              </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="topAP" prefHeight="94.0" prefWidth="1024.0">
+         <children>
+              <Label fx:id="adminProfile" layoutX="43.0" layoutY="32.0" text="โปรไฟล์ผู้ดูแลระบบ">
+                  <font>
+                      <Font name="System Bold" size="25.0" />
+                  </font>
+              </Label>
+              <Label fx:id="timeLabel" layoutX="837.0" layoutY="8.0" prefHeight="39.0" prefWidth="158.0" text="yyyy-MM-dd HH:mm:ss">
+                  <font>
+                      <Font name="System Bold" size="15.0" />
+                  </font>
+              </Label>
+              <Button fx:id="logout" layoutX="860.0" layoutY="48.0" mnemonicParsing="false" onAction="#handleLogOutButton" text="ออกจากระบบ">
+                  <font>
+                      <Font size="15.0" />
+                  </font>
+              </Button>
+         </children></AnchorPane>
+    </children>
+</AnchorPane>

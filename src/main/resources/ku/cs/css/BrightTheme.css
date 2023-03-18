@@ -1,0 +1,226 @@
+.label {
+    -fx-text-fill: #000000;
+}
+.root {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.background {
+    -fx-background-color: #FFFFFF;
+}
+
+.anchorPane {
+    -fx-background-color: #006D68;
+}
+
+.anchorPanePopup {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button {
+    -fx-background-color: #5e5e5e;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button:hover {
+    -fx-background-color: #919191;
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor: hand;
+}
+
+.buttonInAnchorPane {
+    -fx-background-color: #006D68;
+    -fx-text-fill: #FFFFFF;
+}
+.buttonInAnchorPane:hover {
+    -fx-text-fill: #006D68 ;
+    -fx-background-color: #B1BB1C;
+    -fx-cursor: hand;
+}
+
+.contentTextInAnchorPane {
+    -fx-text-fill: #FFFFFF;
+}
+
+.menu-button {
+    -fx-background-color: #c9c9c9;
+}
+
+.menu-button:hover {
+    -fx-background-color: #e0e0e0;
+    -fx-cursor: hand;
+}
+
+.menu-item {
+    -fx-background-color: #c9c9c9;
+}
+
+.menu-item:focused {
+     -fx-background-color: #e0e0e0;
+}
+
+.context-menu {
+    -fx-background-color: #c9c9c9;
+}
+
+.text-field{
+    -fx-border-color: black;
+    -fx-border-radius: 20px;
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+}
+.text-field:focused{
+    -fx-background-color: #dbdbd9;
+}
+
+.text-area{
+        -fx-border-color: black;
+        -fx-background-color: white;
+}
+
+.text-area .content{
+       -fx-background-color: white;
+}
+
+.table-view{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: #c9c9c9;
+}
+
+.table-view .column-header{
+    -fx-background-color: #c9c9c9;
+    -fx-border-color: transparent;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: #c9c9c9;
+    -fx-text-fill: #000000;
+}
+
+.table-view .corner {
+    -fx-background-color: #000000;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+}
+.table-row-cell{
+    -fx-text-background-color: #000000;
+}
+
+.table-row-cell:filled:selected:focused, .table-row-cell:filled:selected {
+    -fx-background-color: #ababab;
+}
+
+.table-row-cell:hover {
+    -fx-text-background-color: #5e5e5e;
+}
+.table-row-cell:odd{
+    -fx-background-color: #ededed;
+}
+.table-row-cell:even{
+    -fx-background-color: #e6e6e6;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: #dbdbdb;
+}
+
+.scroll-bar:horizontal {
+    -fx-background-color: #dbdbdb;
+}
+
+.scroll-bar:vertical .thumb{
+    -fx-background-color:  #ababab;
+}
+.scroll-bar:horizontal .thumb {
+    -fx-background-color:  #ababab;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab{
+    -fx-background-color: #b8b8b8;
+}
+
+.tab .tab-label {
+    -fx-background-color: #b8b8b8;
+    -fx-text-fill: #000000;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-color: transparent;
+}
+.tab:selected .tab-label {
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #3a3b3a;
+}
+
+.tab:selected{
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #3a3b3a;
+}
+
+.tab:focused{
+    -fx-border-color: transparent;
+}
+
+.tab-pane:focused .tab-header-area .headers-region .tab:selected .focus-indicator {
+ 	-fx-border-width: 0;
+	-fx-border-insets: 0 0 0 0;
+	-fx-border-radius: 0;
+}
+
+.check-box .box {
+
+-fx-background-color: white;
+-fx-border-color:grey;
+-fx-border-radius:3px;
+
+}
+
+.check-box {
+    -fx-text-fill: #000000;
+}
+
+.check-box:selected .mark {
+
+-fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+-fx-background-color: #c9c9c9;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill: white;
+}
+
+.list-cell:odd{
+    -fx-background-color: #ededed;
+}
+.list-cell:even{
+    -fx-background-color: #e6e6e6;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #5f88c9;
+    -fx-text-fill: #000000;
+}
+
+.radio-button {
+    -fx-text-fill: #000000;
+}
+
+.corner {
+    -fx-background-color: transparent ;
+}

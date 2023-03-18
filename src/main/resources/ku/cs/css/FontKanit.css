@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('Kanit-SemiBold.ttf');
+}
+
+.tab {
+    -fx-font-family: "Kanit";
+}
+
+.check-box {
+    -fx-font-family: "Kanit";
+}
+
+.radio-button {
+    -fx-font-family: "Kanit";
+}
+
+.table-cell {
+    -fx-font-family: "Kanit";
+}
+
+.list-cell {
+    -fx-font-family: "Kanit";
+}
+
+.text-input {
+    -fx-font-family: "Kanit";
+}
+
+.text-area {
+    -fx-font-family: "Kanit";
+}
+
+.label {
+    -fx-font-family: "Kanit";
+}
+
+.button{
+    -fx-font-family: "Kanit";
+}
